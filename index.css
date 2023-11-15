@@ -5,18 +5,26 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    height: 100vh;
+    background-color: rgb(199, 199, 199)
 }
 
-h1 {
-    text-align: center;
+.left-panel {
+    /* background-color: pink; */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .game {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: skyblue;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 50%;
     overflow: hidden;
 }
 
@@ -45,7 +53,6 @@ h1 {
     /* height is decided by row height */
     background-color: rgb(172, 172, 172);
     border: 3px outset rgb(71, 71, 71);
-    z-index: 999;
 }
 
 #safe {
@@ -58,4 +65,15 @@ h1 {
 
 #mine {
     background-color: black;
+}
+
+hr {
+    margin: 10px 0 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 8em;
 }

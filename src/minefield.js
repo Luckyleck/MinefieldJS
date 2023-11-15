@@ -20,6 +20,7 @@ class Minefield {
             for (let j = 0; j < this.board[0].length; j++) {
                 let realTile = this.board[i][j]
                 let divTile = document.createElement('div');
+                divTile.style.width = '100px'
                 divTile.addEventListener('click', (event) => this.handleTileClick(event, i, j));
 
                 if (realTile.discovered) {
