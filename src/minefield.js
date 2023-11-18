@@ -22,7 +22,6 @@ class Minefield {
                 let divTile = document.createElement('div');
                 divTile.style.width = '100px'
                 divTile.addEventListener('click', (event) => this.handleTileClick(event, i, j));
-
                 if (realTile.discovered) {
                     if (realTile.isMine) {
                         divTile.id = realTile.id;
